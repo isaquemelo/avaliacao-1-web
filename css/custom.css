@@ -73,7 +73,11 @@ a:hover {
     opacity: 1; } }
 .main-nav {
   background: #f4f4f4;
-  padding-top: 23px; }
+  padding-top: 23px;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
   .main-nav nav ul li a {
     color: #a7a7a7; }
   .main-nav nav ul li.active a {
