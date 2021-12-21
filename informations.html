@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/kube.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/custom.css" />
 	<link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
@@ -25,13 +26,11 @@
 				</div>
 			    <nav id="navbar-1" class="navbar item-nav">
 				    <ul>
-				        <li class="active"><a href="#about">About</a></li>
-				        <li><a href="#experiences">Experiences</a></li>
-				        <li><a href="#achievements">Achievements</a></li>
-				        <li><a href="#skills">Skills</a></li>
-						<li><a href="https://isaquemelo.github.io/avaliacao-1-web/informations">Informations</a></li>
+						<li><a href="/">Home</a></li>
+						<li class="active"><a href="https://isaquemelo.github.io/avaliacao-1-web/informations">Informations</a></li>
 						<li><a href="https://isaquemelo.github.io/avaliacao-1-web/hobbies">Hobbies</a></li>
 						<li><a href="https://isaquemelo.github.io/avaliacao-1-web/contact">Contact</a></li>
+
 				    </ul>
 				</nav>
 			</header>
@@ -41,73 +40,76 @@
 	<!-- Introduction -->
 	<div class="intro section" id="about">
 		<div class="container">
-			<p>Hi, I’m Isaque Melo</p>
 			<div class="units-row units-split wrap">
 				<div class="unit-20">
 					<img src="img/ava.jpg" alt="Avatar">
 				</div>
 				<div class="unit-80">
-					<h1>I live in<br><span id="typed"></span></h1>
+					<h1>Contact me</h1>
 				</div>
-				<p>
-					Frontend Developer with several years of experience in the web area. I'm also experienced with tools like Gulp, Grunt, NPM (Content Management System). Strong interpersonal skills in teams to ensure communication and work together with the team to reach company goals. Interested in new technologies, web design, UX. Ease and willingness to learn about new technologies and new frameworks for the web
-				</p>
 			</div>
 		</div>
-	</div>
 
-	<!-- Work Experience -->
-	<div class="work section second" id="experiences">
 		<div class="container">
-			<h1>Work<br>Experiences</h1>
-			<ul class="work-list">
-				<li>2021-</li>
-				<li><a href="#">MercadoLibre</a></li>
-				<li>Software engineer </li>
-			</ul>
-			<ul class="work-list">
-				<li>2019-2021</li>
-				<li><a href="#">hacklab/</a></li>
-				<li>Full-stack developer / Tech leader</li>
-			</ul>
-			<ul class="work-list">
-				<li>2016-2019</li>
-				<li><a href="#">BrasaDesign</a></li>
-				<li>UX Designer and Front-end developer</li>
-			</ul>
-		</div>
-	</div>
+			<form>
 
-	<!-- Award & Achievements -->
-	<div class="award section second" id="achievements">
-		<div class="container">
-			<h1>Award &amp;<br>Achievements</h1>
-			<ul class="award-list list-flat">
-				<li>Octuber 2019</li>
-				<li>IEEE Latino American Competition</li>
-				<li>2nd and 3rd place</li>
-			</ul>
-		</div>
-	</div>
+				<div class="form-group">
+					<label for="exampleFormControlInput1">Name</label>
+					<input type="text" class="form-control" required id="exampleFormControlInput1" placeholder="Your name" minleght="5" maxlength="25">
+				</div>
 
-	<!-- Technical Skills -->
-	<div class="skills section second" id="skills">
-		<div class="container">
-			<h1>Technical<br>Skills</h1>
-			<ul class="skill-list list-flat">
-				<li>Web Technology</li>
-				<li>HTML / CSS / SASS / PHP / Javascript</li>
-			</ul>
-			<ul class="skill-list list-flat">
-				<li>Database</li>
-				<li>MySQL / MongoDB / Oracle </li>
-			</ul>
-			<ul class="skill-list list-flat">
-				<li>More</li>
+				<div class="form-group">
+				  <label for="exampleFormControlInput1">Email address</label>
+				  <input type="email" class="form-control" required id="exampleFormControlInput1" placeholder="name@example.com">
+				</div>
+
+
+				<div class="form-group">
+					<label for="exampleFormControlInput1">Phone</label>
+					<input type="text" class="form-control" required id="phone" placeholder="083 9 96405049">
+				</div>
+
 				
-				<li>Check 	<a href="https://www.linkedin.com/in/isaque-melo/">Linkedin</a> for full view</li>
-			</ul>
+
+				<div class="form-group">
+				  <label for="exampleFormControlSelect2">How much did you enjoed this website?</label>
+				  <select multiple class="form-control" id="exampleFormControlSelect2">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				  </select>
+				</div>
+
+				<div class="form-group"> 
+					<label for="exampleFormControlSelect2">What do you want?</label>
+					<br>
+					<label class="radio-inline" for="radios-0">
+					  <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+					  Question
+					</label> 
+					<label class="radio-inline" for="radios-1">
+					  <input type="radio" name="radios" id="radios-1" value="2">
+					  Hire
+					</label> 
+					
+				</div>
+
+				<div class="form-group">
+				  <label for="exampleFormControlTextarea1">Message</label>
+				  <textarea class="form-control" required id="exampleFormControlTextarea1" rows="3" minlength="10" maxlength="400"></textarea>
+				</div>
+
+				<div class="form-group">
+					<button id="singlebutton" name="singlebutton" class="btn btn-primary" type="submit">Send</button>
+				</div>
+
+				
+			  </form>
 		</div>
+
+		
 	</div>
 
 	<footer>
@@ -129,9 +131,9 @@
 
 	<!-- Javascript -->
 	<script src="js/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.11.2/jquery.mask.min.js" integrity="sha512-Y/GIYsd+LaQm6bGysIClyez2HGCIN1yrs94wUrHoRAD5RSURkqqVQEU6mM51O90hqS80ABFTGtiDpSXd2O05nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="js/typed.min.js"></script>
     <script src="js/kube.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.11.2/jquery.mask.min.js" integrity="sha512-Y/GIYsd+LaQm6bGysIClyez2HGCIN1yrs94wUrHoRAD5RSURkqqVQEU6mM51O90hqS80ABFTGtiDpSXd2O05nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/site.js"></script>
     <script>
 		function newTyped(){}$(function(){$("#typed").typed({
